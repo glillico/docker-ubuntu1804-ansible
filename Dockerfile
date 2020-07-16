@@ -1,8 +1,6 @@
 FROM ubuntu:18.04
 LABEL maintainer="Graham Lillico"
 
-ENV DEBIAN_FRONTEND noninteractive
-
 # Update packages to the latest version
 RUN apt-get update \
 && apt-get -y upgrade \
