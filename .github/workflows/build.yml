@@ -1,0 +1,26 @@
+---
+name: build
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '40 0 * * 0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out git repository.
+      uses: actions/checkout@v2
+
+    - name: Build the docker container
+      run: docker build -t docker-test .
+
+    - name: Test the docker container runs.
+      run: docker run --name docker-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-test
+
+    - name: Check ansible is availble inside the container.
+      run: docker exec --tty docker-container env TERM=xterm ansible --version
