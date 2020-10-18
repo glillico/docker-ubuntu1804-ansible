@@ -1,5 +1,7 @@
 # Ubuntu 18.04 Docker Image for Ansible Testing
 
+[![Build Status](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/build/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3Abuild)
+
 A docker container using Ubuntu 18.04 with Ansible installed for playbook and role testing.
 
 ## Tags
