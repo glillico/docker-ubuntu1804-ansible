@@ -11,10 +11,10 @@ RUN apt-get update \
 # Clean the apt cache.
 # Remove documents, man pages & apt files.
 RUN apt-get install -y --no-install-recommends \
-python3 \
-python3-pip \
-python3-setuptools \
-python3-wheel \
+python \
+python-pip \
+python-setuptools \
+python-wheel \
 sudo \
 systemd \
 systemd-sysv \
@@ -25,7 +25,7 @@ systemd-sysv \
 && rm -rf /usr/share/man/*
 
 # Install ansible.
-RUN pip3 install ansible
+RUN pip install ansible
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
