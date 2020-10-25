@@ -1,5 +1,5 @@
 ---
-name: CI-Python2
+name: Python2
 on:
   pull_request:
   push:
