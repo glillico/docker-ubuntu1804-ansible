@@ -1,5 +1,5 @@
 ---
-name: CI
+name: Latest
 on:
   pull_request:
   push:
