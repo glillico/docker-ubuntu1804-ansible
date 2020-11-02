@@ -1,6 +1,6 @@
 # Ubuntu 18.04 Docker Image for Ansible Testing
 
-[![Latest](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/Latest/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3ALatest) [![Python2](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/Python2/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3APython2)
+[![latest](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/latest/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3Alatest) [![python2](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/python2/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3Apython2)
 
 A docker container using Ubuntu 18.04 with Ansible installed for playbook and role testing.
 
