@@ -1,5 +1,5 @@
 ---
-name: Python2
+name: python2
 on:
   pull_request:
   push:
