@@ -1,5 +1,5 @@
 ---
-name: Latest
+name: latest
 on:
   pull_request:
   push:
