@@ -11,7 +11,11 @@ RUN apt-get update \
 # Clean the apt cache.
 # Remove documents, man pages & apt files.
 RUN apt-get install -y --no-install-recommends \
+build-essential \
+libffi-dev \
+libssl-dev \
 python \
+python-dev \
 python-pip \
 python-setuptools \
 python-wheel \
