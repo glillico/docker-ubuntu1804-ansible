@@ -11,7 +11,11 @@ RUN apt-get update \
 # Clean the apt cache.
 # Remove documents, man pages & apt files.
 RUN apt-get install -y --no-install-recommends \
+build-essential \
+libffi-dev \
+libssl-dev \
 python3 \
+python3-dev \
 python3-pip \
 python3-setuptools \
 python3-wheel \
@@ -25,7 +29,7 @@ systemd-sysv \
 && rm -rf /usr/share/man/*
 
 # Install ansible.
-RUN pip3 install ansible
+RUN pip3 --no-cache-dir install ansible
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
