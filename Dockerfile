@@ -29,7 +29,7 @@ systemd-sysv \
 && rm -rf /usr/share/man/*
 
 # Install ansible.
-RUN pip install ansible
+RUN pip  --no-cache-dir install ansible
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
