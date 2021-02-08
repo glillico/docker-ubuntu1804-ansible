@@ -25,13 +25,15 @@ jobs:
     - name: Check ansible is availble inside the container.
       run: docker exec --tty docker-container env TERM=xterm ansible --version
 
+  # If on master branch, push to Docker Hub.
   push:
     runs-on: ubuntu-latest
     needs: build
+    if: github.ref == 'refs/heads/master'
 
-# For further details on the below see;
-# https://github.com/docker/build-push-action#multi-platform-image &
-# https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#contexts
+    # For further details on the below see;
+    # https://github.com/docker/build-push-action#multi-platform-image &
+    # https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#contexts
     steps:
     - name: Check out git repository.
       uses: actions/checkout@v2
