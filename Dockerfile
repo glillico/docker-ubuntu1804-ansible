@@ -29,7 +29,7 @@ systemd-sysv \
 && rm -rf /usr/share/man/*
 
 # Install ansible.
-RUN pip3 install ansible 'cryptography==3.3.2'
+RUN pip3 install ansible 'cryptography==3.3.2' 'jinja2<3.0.0' 'markupsafe<2.0.0'
 
 # Create ansible directory and copy ansible inventory file.
 RUN mkdir /etc/ansible
