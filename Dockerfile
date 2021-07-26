@@ -29,7 +29,7 @@ systemd-sysv \
 && rm -rf /usr/share/man/*
 
 # Upgrade pip.
-RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade 'pip<21.2'
 
 # Install ansible.
 RUN pip3 install ansible
