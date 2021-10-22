@@ -1,6 +1,10 @@
 FROM ubuntu:18.04
 LABEL maintainer="Graham Lillico"
 
+# Fixes https://github.com/pypa/pip/issues/10219
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
 # Update packages to the latest version
 RUN apt-get update \
 && apt-get -y upgrade \
