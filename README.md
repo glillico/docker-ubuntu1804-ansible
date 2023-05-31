@@ -1,5 +1,11 @@
 # Ubuntu 18.04 Docker Image for Ansible Testing
 
+DEPRECATED - Ubuntu 18.04 is End Of Life (EOL) as of May 31st 2023. For alternatives please see the below.
+
+  - [Ubuntu 20.04](https://github.com/glillico/docker-ubuntu2004-ansible)
+  - [Ubuntu 22.04](https://github.com/glillico/docker-ubuntu2204-ansible)
+  - [Ubuntu 23.04](https://github.com/glillico/docker-ubuntu2304-ansible)
+
 [![latest](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/latest/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3Alatest) [![python2](https://github.com/glillico/docker-ubuntu1804-ansible/workflows/python2/badge.svg)](https://github.com/glillico/docker-ubuntu1804-ansible/actions?query=workflow%3Apython2)
 
 A docker container using Ubuntu 18.04 with Ansible installed for playbook and role testing.
